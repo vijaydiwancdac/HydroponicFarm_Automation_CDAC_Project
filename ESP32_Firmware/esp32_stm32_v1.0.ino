@@ -1,3 +1,9 @@
+/* STM32 transmits sensor readings to ESP32 over UART2
+- ESP32 parses temperature, humidity, TDS, and water level
+- Data validated and output with status markers
+- Basic error handling included for malformed input
+- Prepared for integration into dashboards or logging tools */
+
 // UART Configuration
 #define STM_RX 16
 #define STM_TX 17
